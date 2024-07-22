@@ -15,7 +15,7 @@ For `SenseVoice`, visit [SenseVoice repo](https://github.com/FunAudioLLM/SenseVo
 
 **Clone and install**
 
-- Clone the repo
+- Clone the repo and submodules
 ``` sh
 git clone --recursive URL
 # If you failed to clone submodule due to network failures, please run following command until success
@@ -23,7 +23,10 @@ cd funaudiollm-app
 git submodule update --init --recursive
 ```
 
-- prepare environments according to cosyvoice & sensevoice repo. then, execute the code below.
+- prepare environments in the submodules according to [cosyvoice](https://github.com/FunAudioLLM/CosyVoice) & [sensevoice](https://github.com/FunAudioLLM/SenseVoice) repo. If you have already prepared the aforementioned resources elsewhere, you can also try modifying the code related to resource path configuration in the app.py file (line 15-18).
+
+
+- execute the code below.
 ``` sh
 pip install -r requirements.txt
 ```
