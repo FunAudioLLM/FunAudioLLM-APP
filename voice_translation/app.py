@@ -22,9 +22,9 @@ from cosyvoice.cli.cosyvoice import CosyVoice
 from cosyvoice.utils.file_utils import load_wav
 from funasr import AutoModel
 
-api = HubApi()
-MS_API_TOKEN = os.environ.get('MS_API_TOKEN')
-api.login(MS_API_TOKEN)
+# api = HubApi()
+# MS_API_TOKEN = os.environ.get('MS_API_TOKEN')
+# api.login(MS_API_TOKEN)
 
 DS_API_TOKEN = os.getenv('DS_API_TOKEN')
 dashscope.api_key = DS_API_TOKEN
